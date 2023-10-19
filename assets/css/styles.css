@@ -58,8 +58,6 @@
 .project-container img:hover {
   transform: scale(1.1);
 }
-.project-container {
-}
 
 .project-title {
   font-size: 1.3rem;
