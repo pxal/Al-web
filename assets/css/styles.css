@@ -34,7 +34,39 @@
     --smaller-font-size: 0.875rem;
   }
 }
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
 
+.work-img {
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 30rem;
+  height: auto;
+  margin: 0.5rem;
+}
+
+.work-img img {
+  transition: 1s;
+}
+
+.work-title {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  color: #fff;
+  background-color: rgb(7, 7, 7);
+}
+
+.work-title:hover {
+  background-color: blue;
+}
 /*Project*/
 
 .project {
@@ -394,33 +426,6 @@ img {
   border-radius: 0.5rem;
 }
 
-/* ===== WORK =====*/
-.work-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 1rem;
-}
-
-.work-img {
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: 0.5rem;
-  overflow: hidden;
-  width: 30rem;
-}
-
-.work-img img {
-  transition: 1s;
-}
-
-.work-title {
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  font-style: italic;
-  color: #fff;
-  background-color: rgb(7, 7, 7);
-}
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
@@ -483,7 +488,7 @@ img {
 .project-link {
   margin-bottom: 2rem;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 430px) {
   .home {
     padding: 4rem 0 2rem;
   }
@@ -516,6 +521,7 @@ img {
     width: 360px;
     padding-top: 2rem;
   }
+
   .contact__container {
     justify-items: center;
   }
@@ -549,6 +555,7 @@ img {
     display: flex;
     padding-top: 0;
   }
+
   .nav__item {
     margin-left: var(--mb-6);
     margin-bottom: 0;
